@@ -98,7 +98,7 @@
         const isAdmin = new URLSearchParams(window.location.search).get('ask') === '15032006';
 
         // 10 Şarkılık Playlist
-        const playlist = Array.from({length: 10}, (_, i) => `sarki-${i+1}.mp3`);
+        const playlist = Array.from({length: 5}, (_, i) => `sarki-${i+1}.mp3`);
         let currentSongIdx = 0;
         const audio = document.getElementById('audio');
         function loadSong(idx) { audio.src = playlist[idx]; }
